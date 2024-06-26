@@ -5,7 +5,7 @@ const MONGODB_URI=process.env.MONGODB_URI;
 const PORT=process.env.PORT || 5001
 
 
-await mongoose.connect(MONGODB_URI,{
+mongoose.connect(MONGODB_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
