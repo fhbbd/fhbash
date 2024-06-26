@@ -1,3 +1,5 @@
+
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const teacherRouter = require('./route/teacherRoute')
@@ -19,5 +21,10 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
 app.use('/api/teacher',  teacherRouter)
+
+
+app.listen(PORT,()=>{
+    console.log(`server is running at the port of ${PORT}`)
+})
 
 module.exports=app;
