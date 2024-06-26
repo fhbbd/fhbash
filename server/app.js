@@ -6,6 +6,7 @@ const PORT=process.env.PORT||5001
 const MONGODB_URI=process.env.MONGODB_URI
 const teacherRoute = require('./route/teacherRoute')
 
+app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 app.use('/api/teacher', teacherRoute)
