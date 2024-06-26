@@ -5,11 +5,11 @@ const MONGODB_URI=process.env.MONGODB_URI;
 const PORT=process.env.PORT || 5001
 
 
-mongoose.connect(MONGODB_URI,{
+await mongoose.connect(MONGODB_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
-const db = mongoose.connection
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.listen(PORT,()=>{

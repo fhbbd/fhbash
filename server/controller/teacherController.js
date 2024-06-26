@@ -1,20 +1,29 @@
 const Teacher = require('../model/teacherModel')
 
 const getTeacher= async(req,res)=>{
-    const allTeacher=await Teacher.find()
-    res.send(allTeacher)
+    try {
+        const allTeacher=await Teacher.find()
+        res.json(allTeacher)
+    } catch (error) {
+        res.json(error)
+    }
+   
 }
 
 const createTacher= async(req,res)=>{
-    const {name,age}=req.body
+try {
+        const {name,age}=req.body
 
-    const newTeacher= new Teacher({
-        name,
-        age
+        const newTeacher= new Teacher({
+            name,
+            age
     })
-const finalTeacher = await newTeacher.save()
-    res.send(finalTeacher)
-}
+        const finalTeacher = await newTeacher.save()
+        res.json(finalTeacher)
+    
+} catch (error) {
+    res.json(error)
+}}
 
 
 
