@@ -3,8 +3,15 @@ const { default: mongoose } = require("mongoose");
 
 
 const teacherSchema = mongoose.Schema({
+    tId:String,
     name:String,
-    age:Number
+    designation:String,
+    salary:Number,
+    late:Number,
+    absent:Number,
+    diduction:Number,
+    addition:Number,
+    month:String
 }) 
 
 

@@ -1,0 +1,44 @@
+ <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">TID:</label>
+                        <span className='col-span-3'>FHB103</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Name:</label>
+                        <span className='col-span-3'>Md Pavel Hossain</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Designation:</label>
+                        <span className='col-span-3'>Asst Teacher</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Salary:</label>
+                        <span className='col-span-3'>Tk 9000</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Month:</label>
+                        <span className='col-span-3'>Jun 24</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Late:</label>
+                        <span className='col-span-3'>Late</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Absent:</label>
+                        <span className='col-span-3'>Absent</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Addition:</label>
+                        <span className='col-span-3'>Addition</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label htmlFor="tId">Diduction:</label>
+                        <span className='col-span-3'>Diduction</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Date:</label>
+                        <span className='col-span-3'>Date</span>
+                    </div>
+                    <div className='grid grid-cols-4 border-b-[1px] border-stone-400 w-full'>
+                        <label className='col-span-1' htmlFor="tId">Joining Date:</label>
+                        <span className='col-span-3'>Joining Date</span>
+                    </div>

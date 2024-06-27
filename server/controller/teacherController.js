@@ -12,10 +12,27 @@ const getTeacher= async(req,res)=>{
 
 const createTacher= async(req,res)=>{
 try {
-        const {name,age}=req.body
-        const newTeacher= new Teacher({
+        const {
+            tId,
             name,
-            age
+            designation,
+            salary,
+            late,
+            absent,
+            diduction,
+            addition,
+            month
+        }=req.body
+        const newTeacher= new Teacher({
+            tId,
+            name,
+            designation,
+            salary,
+            late,
+            absent,
+            diduction,
+            addition,
+            month
     })
         const finalTeacher = await newTeacher.save()
         res.json(finalTeacher)
