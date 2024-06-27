@@ -8,6 +8,13 @@ const teacherRoute = require('./route/teacherRoute')
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
+app.use(cors(
+    {
+        origin:["https://fhbash.vercel.app/salary"],
+        methods:["GET","POST"],
+        credential: true,
+    }
+))
 
 app.use('/api/teacher', teacherRoute)
 app.use((req,res,next)=>{

@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Salary() {
+
+    useEffect(()=>{
+        fetch('https://fhbash-api.vercel.app/api/teacher')
+        .then(res=>{
+            res.json()
+        })
+        .then(data=>{
+            console.log(data)
+        })
+    },[])
   return (
     <div className='w-full h-screen'>
         <div className='w-3/5 py-2 border-stone-200 border-[1px] m-auto flex flex-col '>
