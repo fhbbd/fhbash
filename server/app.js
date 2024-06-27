@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(cors(
     {
-        origin:["https://fhbash.vercel.app"],
+        origin:[""],
         methods:["GET","POST"],
         credential: true,
     }
